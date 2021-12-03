@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>M-Hejrati 9723100</title>
+    <link rel="shortcut icon" type="image/png" href="images/mySmile.jpg">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/index.js"></script>
+
+</head>
+
+<body>
+
+    <!-- content rectangle -->
+    <section class="container">
+
+        <div class="container_header">Mr. or Ms. ?</div>
+
+        <div class="container_body">
+
+            <div class="rows">
+
+                <div class="rows_header">"Prediction Form"</div>
+
+                <div class="rows_body">
+
+                    <form id="name-box" class="item">
+                        <label for="name">Name: </label><input name="name" type="string" maxlength="255"><br>
+                    </form>
+
+                    <div class="item">
+                        <label>Gender:</label>
+                        <div class="question-answer" id="radios">
+                            <div>
+                                <input type="radio" value="none" id="radio1" name="gender" />
+                                <label for="radio1" class="radio"><span>Male</span></label>
+                            </div>
+                            <div>
+                                <input type="radio" value="none" id="radio2" name="gender" />
+                                <label for="radio2" class="radio"><span>Female</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-block">
+                        <button class="btn" onclick="api_submit()">Submit</button>
+                        <button class="btn" onclick="save_local_storage()">Save</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="rows">
+                <div class="rows_header">"Prediction Result"</div>
+
+                <div class="rows_body">
+
+                    <div id="predicted_gender" class="item">Gender: ...</div>
+                    <div id="predicted_probability" class="item">Probability: ...</div>
+                    <div id="saved_data_box" class="saved_data_box_class"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="error" id="error"></div>
+
+</body>
+
+</html>

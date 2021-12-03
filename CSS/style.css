@@ -1,0 +1,108 @@
+/* set a background image to the body */
+body {
+    background-image: url("../images/pic.jpg") ;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main container that all data are there */
+.container {
+    max-width: 900px;
+    width: 60%;
+    background-color: rgb(0 0 0 / 70%);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* header part of the container */
+.container_header{
+    color: skyblue;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 10px;
+    margin: auto;
+    font-family: system-ui;
+}
+
+/* body part of the container */
+.container_body{
+    color: lightblue;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: cursive;
+}
+
+/* each row of the container */
+.rows{
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* header of each row */
+.rows_header{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* body of each row */
+.rows_body{
+    height: 140px;
+    width: 180px;
+}
+
+/* put buttons in a flex to keep in one line */
+.btn-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 4px;   
+}
+
+/* prove size of buttons*/
+.btn{
+    width: 60px;
+}
+
+/* saved data */
+.saved_data_box_class {
+    visibility: hidden;
+    padding-top: 10px;
+}
+
+/* other data */
+.item {
+    color: lightblue;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 7px;
+    font-size: 14px;
+    margin: auto;
+}
+
+/* error box that apper in the button of window */
+.error {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(3 5 9);
+    font-size: 18px;
+    bottom: 0;
+}
+
